@@ -36,4 +36,5 @@ jobs:
             ${{ env.IMAGE_NAME }}:${{ github.sha }}
 
       - name: Summary
-        run: echo "Imagen publicada: ${{ env.IMAGE_NAME }}:${{ steps.version.outputs.TAG }}" >> "$GITHUB_STEP_SUMMARY"
+        run: |
+          echo "Imagen publicada: ${{ env.IMAGE_NAME }}:${{ steps.version.outputs.TAG }}" >> "$GITHUB_STEP_SUMMARY"
