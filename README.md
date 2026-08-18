@@ -50,3 +50,7 @@ docker run --rm -p 8080:8080 -e APP_SECRET=test iac-final-app:local
 # http://localhost:8080/hello
 # http://localhost:8080/secreto
 ```
+
+## Evidencia CI/CD
+
+- Push de prueba para validar GitHub Actions y versionado automatico.
